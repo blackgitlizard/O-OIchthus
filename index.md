@@ -1,15 +1,19 @@
-# This is a heading
+# Project Wiki
 
-## Here's a smaller heading
+Welcome to the **Project Wiki**! This is the main page for all the documentation related to the project.
 
-This is a paragraph
+## Table of Contents
 
-* Here's a bulleted list
-* Another item
+1. Introduction
+2. Getting Started
+3. Features
+4. Usage
+5. Contributing
+6. FAQ
+7. Contact
 
-1. And an ordered list
-1. The numbers don't matter
+## Introduction
 
-> This is a qoute
+Provide a brief introduction to your project here. Explain what it does, its purpose, and any other relevant information.
 
-[This is a link to Google](https://google.com)
+## Getting Started
