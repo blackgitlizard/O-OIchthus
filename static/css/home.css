@@ -1,0 +1,72 @@
+#Machines {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+/* Features section */
+#features {
+  background-color: var(--ichthusLichtblauw);
+  padding: 10vw 0;
+  position: relative;
+}
+
+#features h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+.sectionDivider-top .shape-fill,
+.sectionDivider-bottom .shape-fill {
+  fill: white;
+}
+
+.gallery a img {
+  aspect-ratio: 4/3;
+}
+
+.gallery h5 {
+  padding-left: 0.5rem;
+}
+
+#FrontImage {
+  padding: 25vh 0;
+  padding-top: 15vh;
+  background-image: url("https://cdn-kiosk-api.telegraaf.nl/ba6754c0-4768-11ea-8ad0-02d2fb1aa1d7.jpg");
+}
+
+#FrontImage p {
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+}
+
+#FrontImage .btn {
+  display: inline-block;
+
+  padding: 0.625rem 0.625rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+#FrontImage .btn:hover {
+  opacity: 1;
+}
+
+#FrontImage .btn img {
+  height: 8em;
+  transition: height 0.3s ease;
+}
+
+#FrontImage .btn:hover img {
+  height: 9em;
+}

@@ -1,0 +1,208 @@
+#title h1{
+    font-size: min(3rem, 8vw);
+    line-height: 3rem;
+    font-family: 'Rubik Mono One', monospace;;
+}
+
+#title {
+    background-color: var(--ichthusLichtblauw);
+    margin-top: 0;
+    padding: 1rem 0;
+}
+
+body {
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+main .text {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+}
+
+@media screen and (max-width: 55rem){
+    main .rightSide{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Rubik Mono One', monospace;;
+}
+
+h2,h3{
+    margin-top: 2rem;
+}
+
+.rightSide img {
+    max-width: 75%;
+}
+
+.rightSide {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    float: inline-end;
+    margin: 0 2rem;
+    width: 40%;
+}
+
+.herkenImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    width: 100%;
+}
+
+.herkenImages img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.itemImages {
+    display: flex;
+    overflow-x: auto;
+    
+}
+
+strong{
+    color:var(--ichthusBlauw);
+    font-weight: bold;
+}
+
+#VaardigheidPagina section{
+    margin-bottom: 2rem;
+}
+
+#VaardigheidPagina section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid var(--ichthusBlauw);
+    margin: 5px 0;
+}
+
+
+#title #MetaData{
+    display: flex;
+    align-items:center;
+}
+
+#title #MetaData > *{
+    margin-right: 0.5rem;
+}
+
+#title #MetaData p{
+    font-weight: bold;
+}
+
+.categorie{
+    margin:0.2rem 0;
+    border-style: dashed;
+    width:max-content;
+    padding: 0 0.3rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-top:0.5rem;
+    border-width: 0.2rem;
+}
+
+.categorie.electronica{
+    border-color: #ffb514;
+    background-color: #ffedc7;
+}
+
+.categorie.programeren{
+    border-color: #bc14ff;
+    background-color: #f8c7ff;
+}
+
+
+
+/* style the radio buttons */
+input[type="radio"] {
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--ichthusBlauw);
+}
+
+#VaardigheidPagina .content p{
+    margin-bottom: 1rem;
+}
+
+#VaardigheidPagina pre code {
+    display: block;
+    margin: auto 0;
+    padding: 10px;
+    color: #d5d5d6;
+    overflow-x: auto;
+    word-break: break-all;
+}
+
+#VaardigheidPagina code {
+    background: rgb(232, 232, 232);
+    border-radius: 2px;
+    padding: 4px 6px;
+}
+
+#VaardigheidPagina pre {
+    background: var(--codeBlockBackground);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.highlight{
+    width: 100%;
+}
+
+#VaardigheidPagina pre code {
+    display: block;
+    margin: auto 0;
+    padding: 10px;
+    color: #d5d5d6;
+    overflow-x: auto;
+    word-break: break-all;
+    background: var(--codeBlockBackground);
+    border-radius: 8px;
+}
+
+#VaardigheidPagina .content .alert{
+    margin-bottom: 1rem;
+}
+#VaardigheidPagina .content .alert h3{
+    margin-bottom: 0.5rem;
+}
+
+#VaardigheidPagina .Python, .Cpp, .JS, .pcb{
+    display: none;
+}
+
+#VaardigheidPagina.PythonACTIVE .Python{
+    display: block;
+}
+
+#VaardigheidPagina.CppACTIVE .Cpp{
+    display: block;
+}
+
+#VaardigheidPagina.JSACTIVE .JS{
+    display: block;
+}
+
+#VaardigheidPagina.pcbACTIVE .pcb{
+    display: block;
+}

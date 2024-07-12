@@ -1,0 +1,71 @@
+{{ define "main" }}
+<main id="VaardigheidPagina">
+  <div id="headerBackground"></div>
+
+  <section id="title"> 
+    <div class="content"> 
+      <h1>{{ .Title }}</h1>
+      <div id="MetaData">
+        <p class="categorie {{lower .Params.categorie}}">{{.Params.categorie}}</p> 
+        {{ $dateHuman := .Date | time.Format ":date_long" }}        
+        <p class="Credits">Geschreven door {{.Params.credits}}</p>
+        
+      </div>
+      {{ $filePath := path.Join .Site.Params.GitHubLink (path.Clean .File.Path) }}
+      <p class="Credits">{{ $dateHuman }} | <a href="{{ $filePath }}" >Stel  bewerking voor</a> </p>
+      
+      <div class="horizontal-line"></div>
+      <br>
+      <p>
+        {{ .Params.introUse }} <br><br>
+        {{ .Params.introVaardigheid }}
+      </p>
+
+    </div> 
+  </section>
+  <section class="content">
+    {{ .Content }}
+  </section>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{/*  <section id="slicen"> 
+    <div class="content"> 
+      <h2>Slicen</h2> 
+      <div class="text"> 
+        <p>
+          Om een 3D model uit te kunnen printen, moet je het eerst slicen. Dan vertaald de slicer het 3D model naar de motorbewegingen die de printer moet maken. <br>
+          Om een 3D model te slicen voor een 3d printer van <span class="Important">Prusa</span> gebruik je <span class="Important">Prusa-Slicer</span>
+        </p> 
+
+        <div class="rightSide">
+          <p>Open de Prusa-Slicer app</p>
+          <img width="35%" src="https://3druck.com/wp-content/uploads/2021/08/prusslicer.jpg">
+        </div>
+
+        <p>
+          Klik op "Add" of "Import" om je 3D-model in PrusaSlicer te laden.<br>
+          Zoek het bestand van je 3D-model op je computer en open het.<br>
+          Het bestand verschijnt nu op de buidplate. Deze buildpate komt overeen met de plaat op de printer.<br>
+          <br>
+          Pas de slicer-instellingen aan volgens jouw voorkeuren en het beoogde gebruik van het object. Dit omvat laagdikte, vulpatroon, snelheid, koeling, enz.<br>
+          Deze instellingen beïnvloeden de kwaliteit en het afdrukproces, dus experimenteer en test om de beste resultaten te krijgen.<br>
+          <br>
+          Klik op "Slice Now" om het slicen te starten. PrusaSlicer zal je 3D-model omzetten in lagen en G-code genereren.<br>
+          Bekijk de voorbeeldweergave om te controleren of alles er goed uitziet. Je kunt door de lagen bladeren om eventuele problemen op te sporen.<br>
+          Als je fouten of ongewenste resultaten opmerkt, keer dan terug naar stap 4 en pas de instellingen aan.<br>
+          <br>
+          Nadat je tevreden bent met het voorbeeld, klik je op "Export G-code".<br>
+          Pak een SD kaart en stop deze in de computer<br>
+          Kies een locatie op je SD-kaart om het G-code-bestand op te slaan en geef het een herkenbare naam.<br>
+        </p>
+        
+
+      </div>
+    </div>
+ </section>   */}}
+</main>
+{{ end }}
+
+  
+    
+  
+   

@@ -1,0 +1,26 @@
+#Credits{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--global-palette6);
+}
+
+#Credits .LogoBox{
+    height: 5rem;
+}
+
+#Credits .LogoBox img{
+    height: 100%;
+}
+
+#Copyright{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--ichthusBlauw);
+    color: white;
+}
+
+#Copyright p{
+    color: white;
+}
