@@ -1,8 +1,7 @@
 +++
-title = 'Home'
+title = 'Ichthus Technasium Website'
 date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
-<title>O&O Website</title>
 
 Werkt dit?
