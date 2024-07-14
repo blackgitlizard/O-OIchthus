@@ -1,5 +1,0 @@
-baseURL = 'https://ichthustechnasium.netlify.app/'
-languageCode = 'en-us'
-title = 'Ichthus Technasium Website'
-	
-theme = ["PaperMod"]
